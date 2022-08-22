@@ -8,6 +8,7 @@
 #Assumption
 #-Average speed on the Highway -60km/h
 
+#Time Returning Function
 def time(index):
     townDistanceList=[110,111,150,25,112]
     time= townDistanceList[index]/60
@@ -15,9 +16,9 @@ def time(index):
     seconds = time * 3600
     m, s = divmod(seconds, 60)
     h, m = divmod(m, 60)
-
     return ("%d:%02d:%02d (hh:mm:ss)" % (h, m, s))
 
+#Main programme 
 print("_________Speed Table_________\n")
 print("_________Town List_________")
 print("•Galle -G \n•Kandy -K \n•Matara -M \n•Katunayaka -C \n•Ratnapura -R")
