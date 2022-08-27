@@ -8,11 +8,9 @@ def findMax(markList):
             maximum=i
     print(maximum)
 
-count=0
 markList=[]
-while count<10:
+for count in range(10):
     mark=float(input("Enter Marks :"))
     markList.append(mark)
-    count+=1
 findMax(markList)
 #otherwise we can use max function 
